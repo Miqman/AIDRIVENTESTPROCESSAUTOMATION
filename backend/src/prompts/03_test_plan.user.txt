@@ -1,0 +1,22 @@
+EPIC:
+{epic_json}
+
+FEATURES:
+{features_json}
+
+STORIES:
+{stories_json}
+
+Create a TEST PLAN.
+
+Output JSON format:
+{{
+  "scope": "Overall testing goal",
+  "in_scope": ["..."],
+  "out_of_scope": ["..."],
+  "test_types": ["functional", "negative", "regression"],
+  "environments": ["staging", "prod"],
+  "entry_criteria": ["..."],
+  "exit_criteria": ["..."],
+  "risks": ["..."]
+}}

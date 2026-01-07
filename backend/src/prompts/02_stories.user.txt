@@ -1,0 +1,20 @@
+EPIC:
+{epic_json}
+
+FEATURES:
+{features_json}
+
+Generate USER STORIES with acceptance criteria.
+
+Output JSON format:
+[
+  {{
+    "id": "US-1",
+    "feature_id": "F-1",
+    "title": "As a user, I want ...",
+    "acceptance_criteria": [
+      "Given ... When ... Then ...",
+      "..."
+    ]
+  }}
+]

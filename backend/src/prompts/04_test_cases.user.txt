@@ -1,0 +1,29 @@
+TEST PLAN:
+{test_plan_json}
+
+FEATURE (optional):
+{feature_json}
+
+USER STORY (generate test cases ONLY for this story):
+{story_json}
+
+Constraints:
+- Max 6 test cases.
+- Each test case must include: id, story_id, title, priority, preconditions, steps, expected, test_data.
+- "test_data" must be an object (key-value), not a list.
+
+Output JSON format:
+{{
+  "test_cases": [
+    {{
+      "id": "TC-{story_id}-1",
+      "story_id": "{story_id}",
+      "title": "Test case title",
+      "priority": "P1 | P2 | P3",
+      "preconditions": ["..."],
+      "steps": ["Step 1 ...", "Step 2 ..."],
+      "expected": ["Expected result 1", "Expected result 2"],
+      "test_data": {{"key": "value"}}
+    }}
+  ]
+}}

@@ -1,0 +1,21 @@
+TEST CASES (JSON):
+{test_cases_json}
+
+Task:
+Generate Playwright TypeScript test code for ALL test cases above.
+
+Hard requirements:
+- Output ONLY TypeScript code. Do NOT use markdown fences (no ```).
+- Use @playwright/test and import from it.
+- Implement EVERY test case in the JSON (no skipping, no “example only”).
+- Each test case must map to exactly one test() block.
+- Add a comment above each test() block with the test case id and title, e.g.:
+  // TC-XXX: <title>
+- Use describe() blocks to group tests (at least one describe()).
+- Assume baseURL is already configured (use page.goto('/') or relative paths).
+- Keep selectors and test data consistent with "test_data" fields when present.
+- Do not invent additional test cases beyond the JSON.
+
+Quality guidelines:
+- Use stable locators when possible (getByRole / getByLabel / getByTestId), fallback to CSS if needed.
+- Add minimal assertions that match "expected".

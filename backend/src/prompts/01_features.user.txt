@@ -1,0 +1,13 @@
+EPIC (JSON):
+{epic_json}
+
+Generate a list of FEATURES.
+
+Output JSON format:
+[
+  {{
+    "id": "F-1",
+    "name": "Feature name",
+    "description": "What this feature enables"
+  }}
+]
